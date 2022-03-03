@@ -33,6 +33,12 @@ public class MinatourParty {
 	// It could take more than that (until all Test Subjects visit the labyrinth)
 	// This is a thought through choice I made, since I want to allow any guest
 	// to enter as many times as Minatour wishes.
+	//
+	// **Note to Minatour:
+	// I DO NOT recommend inviting over 100 Test Subjects.. ***Ahm Guests**
+	// I understand you are very popular, but it  will be very hard to keep
+	// track of so many guests and invite them one by one into the labyrinth.
+	// Let alone prepare so many cakes!
 
 	public static AtomicInteger cakes_eaten = new AtomicInteger(0); // There is a cake initially
 	public static AtomicBoolean has_cake = new AtomicBoolean(true); // There is a cake initially
