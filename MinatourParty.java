@@ -126,7 +126,7 @@ public class MinatourParty {
 		tot_cakes = cakes_eaten.get();
 
 		// Conclude the party
-		System.out.println("\nAll " + NUM_TEST_SUBJECTS + " guests have now visited the labyrinth");
+		System.out.println("\nAll " + NUM_TEST_SUBJECTS + " guests have now visited the Labyrinth");
 
 		// Did the Test Subjects enjoy the cake?
 		if (tot_cakes != 0) {
