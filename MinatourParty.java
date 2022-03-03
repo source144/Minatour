@@ -46,7 +46,10 @@ public class MinatourParty {
 		// time
 		for (int i = ThreadLocalRandom.current().nextInt(0, NUM_TEST_SUBJECTS); true; i = ThreadLocalRandom.current()
 				.nextInt(0, NUM_TEST_SUBJECTS)) {
-			test_subjects[i].start();
+			
+			if (test_subjects[i].isAlive())
+				test_subjects[i].start();
+		  else test_subjects[i].run();
 
 			// wait for i-th Test Subject to leave labrinth
 			test_subjects[i].join();
@@ -67,7 +70,7 @@ public class MinatourParty {
 		if (tot_cakes != 0) {
 			if (tot_cakes == 1)
 				System.out.println("1 cake was eaten");
-			else System.out.println("A total of " + tot_cakes + "cakes were eaten");
+			else System.out.println("A total of " + tot_cakes + " cakes were eaten");
 		}
 		else System.out.println("No cakes were eaten");
 
